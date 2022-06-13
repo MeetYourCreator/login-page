@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
   },
   logoContainerText: {
     color: colors.white,
+    fontWeight: '800',
   },
   logoContainerLogo: {
     display: 'flex',
@@ -28,14 +29,16 @@ export const styles = StyleSheet.create({
   },
   loginButtonContainer: {
     backgroundColor: colors.flame,
-    paddingTop: '5%',
+    paddingTop: '2%',
     paddingRight: '30%',
-    paddingBottom: '5%',
+    paddingBottom: '2%',
     paddingLeft: '30%',
     borderRadius: 20,
     marginTop: -50,
   },
   loginButtonText: {
     color: colors.white,
+    fontSize: 15,
+    fontWeight: '800',
   },
 });
