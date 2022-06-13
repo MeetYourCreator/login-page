@@ -14,7 +14,17 @@ export const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '80%',
+    width: '50%',
+  },
+  logoContainerText: {
+    color: colors.white,
+  },
+  logoContainerLogo: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    marginTop: -90,
   },
   loginButtonContainer: {
     backgroundColor: colors.flame,
@@ -23,6 +33,7 @@ export const styles = StyleSheet.create({
     paddingBottom: '5%',
     paddingLeft: '30%',
     borderRadius: 20,
+    marginTop: -50,
   },
   loginButtonText: {
     color: colors.white,
