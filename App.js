@@ -13,7 +13,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import SignInScreen from '../../screens/SignInScreen/SignInScreen.js'
+import SignInScreen from '../../screens/SignInScreen/SignInScreen.js';
 
 const App = () => {
   return (
