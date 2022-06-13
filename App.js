@@ -13,12 +13,13 @@ import {
   Text,
   View,
 } from 'react-native';
-import SignInScreen from '../../screens/SignInScreen/SignInScreen.js';
+import HomeScreen from './src/screens/HomeScreen/HomeScreen.js'
+import SignInScreen from './src/screens/SignInScreen/SignInScreen.js';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <SignInScreen />
+      <HomeScreen />
     </SafeAreaView>
   );
 };
