@@ -14,11 +14,11 @@ import {
   View,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/HomeScreen/HomeScreen.js';
 import SignInScreen from './src/screens/SignInScreen/SignInScreen.js';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
