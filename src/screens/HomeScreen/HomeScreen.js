@@ -3,7 +3,7 @@ import { Image, Pressable, Text, useWindowDimensions, View } from 'react-native'
 import { styles } from './styles.js';
 import Logo from '../../../assets/images/discover-transparent-background-logo.png';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const { height } = useWindowDimensions();
   return (
     <View style={styles.screenContainer}>
@@ -11,7 +11,10 @@ const HomeScreen = () => {
       <Text style={styles.logoContainerText}>Welcome to</Text>
         <Image source={Logo} style={[styles.logoContainerLogo, { height: height * 0.3 }]} resizeMode='contain' />
       </View>
-      <Pressable style={styles.loginButtonContainer}>
+      <Pressable
+        style={styles.loginButtonContainer}
+        onPress={() => navigation.navigate('SignInScreen', {})}
+      >
        <Text style={styles.loginButtonText}>Login</Text>
       </Pressable>
     </View>

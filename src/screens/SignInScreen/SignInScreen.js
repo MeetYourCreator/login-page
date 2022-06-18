@@ -4,7 +4,7 @@ import {styles} from './styles.js';
 import Logo from '../../../assets/images/discover-transparent-background-logo.png';
 import Input from '../../components/Input/Input.js';
 
-const SignInScreen = () => {
+const SignInScreen = ({navigation}) => {
   const {height} = useWindowDimensions();
   return (
     <View style={styles.screenContainer}>

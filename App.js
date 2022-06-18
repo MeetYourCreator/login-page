@@ -13,14 +13,28 @@ import {
   Text,
   View,
 } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen/HomeScreen.js'
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/HomeScreen/HomeScreen.js';
 import SignInScreen from './src/screens/SignInScreen/SignInScreen.js';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <HomeScreen />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name='HomeScreen'
+          component={HomeScreen}
+          options={{title: 'Welcome'}}
+        />
+        <Stack.Screen
+          name='SignInScreen'
+          component={SignInScreen}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
